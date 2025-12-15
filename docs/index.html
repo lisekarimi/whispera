@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispera - AI Speech Recognition App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            padding: 40px;
+            margin-top: 40px;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .download-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px dashed #667eea;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 15px 0;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #5568d3;
+        }
+        .features {
+            margin: 30px 0;
+        }
+        .features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .features li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info {
+            background: #d1ecf1;
+            border-left: 4px solid #0dcaf0;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .github-link {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .github-link a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .github-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎤 Whispera</h1>
+        <p class="subtitle">AI speech recognition app that transcribes audio to text up to 2 hours</p>
+
+        <div class="download-section">
+            <h2>📥 Download</h2>
+            <a href="https://github.com/lisekarimi/whispera/releases/download/0.1.0/Whispera.exe"
+               class="download-btn"
+               download="Whispera.exe">
+                Download Whispera.exe
+            </a>
+        </div>
+
+        <div class="info">
+            <strong>ℹ️ System Requirements:</strong><br>
+            • Windows only<br>
+            • Your own OpenAI API key (not included for security)
+        </div>
+
+        <div class="features">
+            <h2>✨ Features</h2>
+            <ul>
+                <li>Transcribe audio files up to 2 hours</li>
+                <li>Native Windows GUI (no browser needed)</li>
+                <li>Pay-per-use with your OpenAI API key</li>
+                <li>No subscriptions or monthly fees</li>
+                <li>Supports MP3, MP4, WAV, and more</li>
+                <li>Automatic file splitting for large files</li>
+            </ul>
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ Important:</strong><br>
+            You need your own OpenAI API key to use this app. Enter it in the GUI when you first run the app, or create a <code>.env</code> file with <code>OPENAI_API_KEY=your_key</code> next to the executable.
+        </div>
+
+        <div>
+            <h2>🚀 Quick Start</h2>
+            <ol style="padding-left: 20px; margin-top: 10px;">
+                <li>Download and run <code>Whispera.exe</code></li>
+                <li>Enter your OpenAI API key in the GUI</li>
+                <li>Select an audio/video file</li>
+                <li>Click "Transcribe" and wait for the result</li>
+                <li>Copy the transcription to clipboard</li>
+            </ol>
+        </div>
+
+        <div class="github-link">
+            <p>
+                <a href="https://github.com/lisekarimi/whispera">View on GitHub →</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

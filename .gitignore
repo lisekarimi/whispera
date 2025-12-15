@@ -1,0 +1,77 @@
+# =====================================
+# Python
+# =====================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# =====================================
+# PyInstaller / Build artifacts
+# =====================================
+build/
+dist/
+*.spec
+*.manifest
+
+# =====================================
+# Environment & Secrets
+# =====================================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# =====================================
+# FFmpeg (large binaries, auto-downloaded)
+# =====================================
+ffmpeg/
+ffmpeg.zip
+ffmpeg_extract_temp/
+ffmpeg*.exe
+ffprobe*.exe
+
+# =====================================
+# IDE & Editor
+# =====================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# =====================================
+# Project-specific
+# =====================================
+*.log
+*.tmp
+temp/
+tmp/
+
+# =====================================
+# Package managers
+# =====================================
+# uv lock file (optional - some teams commit it)
+# uv.lock
+
+# =====================================
+# OS
+# =====================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini

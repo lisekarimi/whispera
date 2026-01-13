@@ -163,5 +163,23 @@
             </p>
         </div>
     </div>
+    <!-- PageBotAI Chatbot -->
+    <script>
+        (function() {
+            var script = document.createElement("script");
+            script.src = "https://pagebotai.lisekarimi.com/static/embed.js";
+            script.onload = function() {
+                initializePageBotAI({
+                    chatbotName: 'WhisperaBot',
+                    primaryColor: '#667eea',
+                    instructions: 'You are a helpful AI assistant that answers questions based on the content of the websites you can access. Be friendly, concise, and accurate in your responses.',
+                    targetUrls: ['https://whispera.lisekarimi.com'],
+                    wsUrl: 'https://pagebotai.lisekarimi.com/ws/chat'
+                });
+            };
+            document.head.appendChild(script);
+        })();
+    </script>
+    <!-- End of PageBotAI Chatbot -->
 </body>
 </html>
